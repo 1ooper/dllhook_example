@@ -1,0 +1,10 @@
+[workspace]
+members = [ 
+    "call_hello_world", "dll_inject",
+    "hello_world_dll",
+]
+resolver = "2"
+
+[workspace.dependencies]
+libloading = "0.8"
+windows = {version = "0.58"}

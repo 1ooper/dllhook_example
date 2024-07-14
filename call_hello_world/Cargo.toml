@@ -1,0 +1,11 @@
+[package]
+name = "call_hello_world"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+libloading = {workspace = true}
+windows = {workspace = true , features = ["Win32_System_LibraryLoader"]}

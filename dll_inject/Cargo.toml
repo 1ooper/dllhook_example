@@ -1,0 +1,10 @@
+[package]
+name = "dll_inject"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libloading = {workspace = true}
+retour = { version = "0.3", features = ["static-detour"] }
+windows = { workspace = true , features = ["Win32_System_LibraryLoader", "Win32_System_SystemServices"] }
+once_cell = "1.19"
